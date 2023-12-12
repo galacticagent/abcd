@@ -1,0 +1,93 @@
+<html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SERRA&BERKAY</title>
+<link rel="stylesheet" href="style1.css">
+<style>
+#div1{
+
+background-image: url("C:/Users/pk736/OneDrive/Pictures/Saved Pictures/final.jpg");
+font-size: 80px;
+font-weight: bold;
+
+margin: 15px;
+padding: 200px;
+color: white;
+
+}
+</style>
+</head>
+<body>
+<section>
+
+
+
+<div class="container">
+<h1>Serra & Berkay</h1>
+<div class="top-content">
+
+</div>
+<div class="photo-gallery">
+<div class="pic place">
+<img src="./1.jpeg" alt="place"></a>
+</div>
+<div class="pic place">
+<img src="./2.jpeg" alt="family"></a>
+</div>
+<div class="pic child">
+<img src="./3.jpeg" alt="child"></a>
+</div>
+<div class="pic place">
+<img src="./4.jpeg" alt="place"></a>
+</div>
+<div class="pic family">
+<img src="./5.jpeg" alt="family"></a>
+</div>
+<div class="pic child">
+<img src="./6.jpeg" alt="child"></a>
+</div>
+<div class="pic place">
+<img src="./7.jpeg" alt="place"></a>
+</div>
+<div class="pic family">
+<img src="./8.jpeg" alt="family"></a>
+</div>
+<div class="pic child">
+<img src="./9.jpg" alt="child"></a>
+</div>
+<div class="pic place">
+<img src="./10.jpeg" alt="place"></a>
+</div>
+
+</div>
+   <!-- Lightbox markup -->
+   <div class="lightbox" id="lightbox">
+    <img src="" alt="lightbox-image" id="lightbox-img">
+</div>
+
+<!-- JavaScript for the lightbox functionality -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const pics = document.querySelectorAll(".pic");
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+        pics.forEach(pic => {
+            pic.addEventListener("click", () => {
+                lightboxImg.src = pic.querySelector("img").src;
+                lightbox.style.display = "flex";
+            });
+        });
+
+        lightbox.addEventListener("click", () => {
+            lightbox.style.display = "none";
+        });
+    });
+</script>
+</section>
+</body>
+</html>
+</div>
+
+</html>
